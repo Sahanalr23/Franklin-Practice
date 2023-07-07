@@ -4,15 +4,24 @@ export default function decorate(block) {
 
   // setup image columns
   [...block.children].forEach((row) => {
+    row.classList.add('row-parent');
     [...row.children].forEach((col) => {
+      col.classList.add('col-parent');
       const pic = col.querySelector('picture');
       if (pic) {
         const picWrapper = pic.closest('div');
         if (picWrapper && picWrapper.children.length === 1) {
           // picture is only content in column
           picWrapper.classList.add('columns-img-col');
+
         }
       }
     });
   });
 }
+
+function updateHeroText() {
+  const heroSpacerEl = document.querySelector('.default-content-wrapper');
+  heroSpacerEl.classList.add('additional-class');
+}
+updateHeroText(); 

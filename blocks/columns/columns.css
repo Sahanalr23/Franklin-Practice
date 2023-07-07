@@ -1,3 +1,5 @@
+
+
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -17,6 +19,42 @@
 
 .columns > div > .columns-img-col img {
   display: block;
+}
+.col-parent .button-container a {
+  background: unset;
+  color: #000;
+  font-weight: 100;
+  border: 1px solid black;
+  border-radius: 0;
+  max-width: 250px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20px;
+  font-family: 'Audi Type', sans-serif;
+}
+.col-parent h3{
+  font-family: 'Audi Type Extended', sans-serif;
+}
+.default-content-wrapper.additional-class {
+  max-width: unset;
+  padding: 40px 0 40px 0;
+  color:  #fff;
+  background-color: #000;
+}
+.default-content-wrapper.additional-class h2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.default-content-wrapper.additional-class p{
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.section.columns-container {
+  padding: 0;
+}
+.section.columns-container .columns-wrapper {
+  padding: 60px 0 60px 0;
 }
 
 @media (min-width: 900px) {
